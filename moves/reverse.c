@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:44:46 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/05 19:12:29 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 16:28:18 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	reverse(t_stack **stack)
 {
-	t_stack *head;
+	t_stack	*head;
 	t_stack	*tail;
 
 	if (ft_lstsize(*stack) < 2)
@@ -26,7 +26,7 @@ int	reverse(t_stack **stack)
 		if (head->next->next == NULL)
 		{
 			head->next = NULL;
-			break;
+			break ;
 		}
 		head = head->next;
 	}
@@ -54,8 +54,9 @@ int	rrb(t_stack **stack_b)
 int	rrr(t_stack **stack_a, t_stack **stack_b)
 {
 	if ((ft_lstsize(*stack_a) < 2) || (ft_lstsize(*stack_b) < 2))
-		reverse(stack_a);
-		reverse(stack_b);
-		ft_putendl_fd("rrr", 1);
-		return (0);
+		return (-1);
+	reverse(stack_a);
+	reverse(stack_b);
+	ft_putendl_fd("rrr", 1);
+	return (0);
 }

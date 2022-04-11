@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 16:42:53 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/06 16:36:38 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 17:47:59 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,3 @@ int	main(int argc, char **argv)
 	free_stack(stack_b);
 	return (0);
 }
-

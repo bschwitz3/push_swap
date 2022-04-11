@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:21:05 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/05 19:12:31 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 16:25:17 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	pa(t_stack **stack_a, t_stack **stack_b)
 	return (0);
 }
 
-int pb(t_stack **stack_a, t_stack **stack_b)
+int	pb(t_stack **stack_a, t_stack **stack_b)
 {
 	if (push(stack_b, stack_a) == -1)
 		return (-1);

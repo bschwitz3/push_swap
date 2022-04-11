@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:33:43 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/05 19:42:08 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 16:28:54 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	rotate(t_stack **stack)
 	if (ft_lstsize(*stack) < 2)
 		return (-1);
 	head = *stack;
-	tail =  ft_lstlast(head);
+	tail = ft_lstlast(head);
 	*stack = head->next;
 	head->next = NULL;
 	tail->next = head;

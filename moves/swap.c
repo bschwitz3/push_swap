@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:09:49 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/05 19:53:09 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 16:29:39 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ int	sa(t_stack **stack_a)
 	if (swap(stack_a) == -1)
 		return (-1);
 	ft_putendl_fd("sa", 1);
-	return(0);
+	return (0);
 }
 
-int sb(t_stack **stack_b)
+int	sb(t_stack **stack_b)
 {
 	if (swap(stack_b) == -1)
 		return (-1);

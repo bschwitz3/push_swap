@@ -6,7 +6,7 @@
 /*   By: bschwitz <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 16:45:46 by bschwitz          #+#    #+#             */
-/*   Updated: 2022/04/05 16:59:14 by bschwitz         ###   ########.fr       */
+/*   Updated: 2022/04/11 15:30:14 by bschwitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_contains(int num, char **argv, int i)
 static int	ft_isnum(char *num)
 {
 	int	i;
-	
+
 	i = 0;
 	if (num[0] == '-')
 		i++;
